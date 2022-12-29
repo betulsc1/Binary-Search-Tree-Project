@@ -1,0 +1,18 @@
+[7, 5, 1, 8, 3, 6, 0, 9, 4, 2] dizisinin Binary-Search-Tree aşamalarını içerir.
+
+Örnek: kök x'dir. root'un sağından y bulunur. Solunda z bulunur vb.
+************************************************ ************************************************ ************************************************ *********
+          6(1) --> ADIM 1 : Root 6 olarak 'kabul edip' dizimizi yerleştirelim.
+         / \ --> ADIM 2 : 7 6'dan büyük olduğu için sağlık deposu.
+        / \ --> ADIM 3 : 5 6'dan küçük olduğu için sol sınırında.
+      5(3) 7(2) --> ADIM 4 : 1<6 eski. için sol taraflar gider. 1<5 eski. için 5'in sol sığınağı.
+      / \ --> ADIM 5 : 8>6 eski. için sağ taraflar gider. 8>7 yaşında. için 7'in sağ sığınağı.
+     / \ --> ADIM 6 : 3<6 eski. için sol taraflar gider. 3<5 eski. için sol kısımlar gider.3>1 eski. için 1'in sağ sığınağı.
+   1(4) 8(5) --> ADIM 7 : 0<6 eski. için sol taraflar gider. 0<5 eski. için sol kısımlar gider.0<1 eski. için 1'in sol sığınağı.    
+   / \ \ --> ADIM 8 : 9>6 eski. için sağ taraflar gider. 9>7 yaşında. için sağ taraflar gider.9>8 eski. için 8'in sağ sığınağı.
+  / \ \ --> ADIM 9 : 4<6 eski. için sol taraflar gider. 4<5 eski. için sol kısımlar gider.4>1 eski. için sağ taraflar gider.4>3 eski. için 3'ün sağına saklayın.
+0(7) 3(6) 9(8) --> ADIM 9 : 2<6 eski. için sol taraflar gider. 2<5 eski. için sol kısımlar gider.2>1 eski. için sağ taraflar gider.2<3 eski. için 3'ün soluna saklama kutusu.
+      / \   
+     / \
+   2(10) 4(9)
+************************************************ ************************************************ ************************************************ *********   
